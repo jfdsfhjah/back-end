@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: back-end
+
+  datasource:
+    url: jdbc:mysql://47.95.194.188:3306/test
+    username: remote_user
+    password: remote_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8081
+
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.example.backend.model
